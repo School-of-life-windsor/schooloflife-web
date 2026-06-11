@@ -93,7 +93,7 @@ export default function HomePage({ onNavigate }) {
                 muted
                 loop
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-40 mix-blend-multiply"
+                className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-20 mix-blend-multiply"
               />
             )}
 
