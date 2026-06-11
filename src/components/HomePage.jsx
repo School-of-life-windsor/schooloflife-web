@@ -7,21 +7,21 @@ const carouselSlides = [
     icon: '🛶',
     accent: 'bg-forest',
     description: 'Windsor Waterfront Lakes — Paddle control, capsize recovery, and water safety training.',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4',
+    videoUrl: '/videos/IMG_5655.MOV',
   },
   {
-    label: 'Fishing Trip',
-    icon: '🎣',
+    label: 'Water Skills Drill',
+    icon: '🏊',
     accent: 'bg-stone-800',
-    description: 'Oldcastle Campgrounds — Traditional angling, knot tying, and patience-building on the water.',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-lake-water-ripples-in-slow-motion-43039-large.mp4',
+    description: 'Windsor Waterfront Lakes — Team balance drills and water rescue coordination.',
+    videoUrl: '/videos/IMG_5656.MOV',
   },
   {
     label: 'Wilderness Survival',
     icon: '🏕️',
     accent: 'bg-campfire',
     description: 'Pine Woods Reservation — Shelter construction, fire building, and compass navigation.',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-bonfire-burning-in-the-forest-at-night-42284-large.mp4',
+    videoUrl: '/videos/IMG_5660.MOV',
   },
 ];
 
@@ -287,27 +287,45 @@ export default function HomePage({ onNavigate }) {
 const reelsData = [
   {
     id: 1,
-    title: 'White Water Kayak',
+    title: 'Kayak Launch Drill',
     category: 'Water Skills',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-waterfall-in-forest-2213-large.mp4',
+    videoUrl: '/videos/IMG_5655.MOV',
     poster: '🛶',
-    views: '1.2K views',
   },
   {
     id: 2,
-    title: 'Dock Fishing Practice',
-    category: 'Fishing Skills',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-man-fishing-in-a-lake-from-a-wooden-dock-40245-large.mp4',
-    poster: '🎣',
-    views: '840 views',
+    title: 'Paddling Technique',
+    category: 'Water Skills',
+    videoUrl: '/videos/IMG_5656.MOV',
+    poster: '🛶',
   },
   {
     id: 3,
-    title: 'Pine Forest Stream',
+    title: 'Wilderness Shelter Camp',
     category: 'Survival Skills',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4',
+    videoUrl: '/videos/IMG_5659.MOV',
     poster: '⛺',
-    views: '2.1K views',
+  },
+  {
+    id: 4,
+    title: 'Gathering Firewood',
+    category: 'Survival Skills',
+    videoUrl: '/videos/IMG_5660.MOV',
+    poster: '🔥',
+  },
+  {
+    id: 5,
+    title: 'Campfire Reflection',
+    category: 'Brotherhood',
+    videoUrl: '/videos/IMG_5733.MOV',
+    poster: '💬',
+  },
+  {
+    id: 6,
+    title: 'Water Safety Training',
+    category: 'Water Skills',
+    videoUrl: '/videos/IMG_0083.mov',
+    poster: '🏊',
   },
 ];
 
@@ -361,9 +379,6 @@ function ReelCard({ reel, onPlay }) {
         <h3 className="text-base font-display font-black uppercase tracking-tight leading-tight pt-1">
           {reel.title}
         </h3>
-        <p className="text-[10px] text-stone-300 font-bold">
-          👁️ {reel.views}
-        </p>
       </div>
     </div>
   );
@@ -371,7 +386,6 @@ function ReelCard({ reel, onPlay }) {
 
 function ReelModal({ reel, onClose }) {
   const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(false);
   const videoRef = useRef(null);
 
   const togglePlay = () => {
@@ -382,13 +396,6 @@ function ReelModal({ reel, onClose }) {
         videoRef.current.play();
       }
       setIsPlaying(!isPlaying);
-    }
-  };
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
     }
   };
 
@@ -405,7 +412,7 @@ function ReelModal({ reel, onClose }) {
           autoPlay
           loop
           playsInline
-          muted={isMuted}
+          muted
           className="absolute inset-0 w-full h-full object-cover"
         />
 
@@ -435,21 +442,6 @@ function ReelModal({ reel, onClose }) {
                 ) : (
                   <svg className="w-5 h-5 text-stone-900 fill-current ml-0.5" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z" />
-                  </svg>
-                )}
-              </button>
-              <button
-                onClick={toggleMute}
-                className="w-10 h-10 bg-canvas border-2 border-stone-900 flex items-center justify-center rounded shadow-[2px_2px_0px_0px_#1C1917] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer"
-                title={isMuted ? 'Unmute' : 'Mute'}
-              >
-                {isMuted ? (
-                  <svg className="w-5 h-5 text-stone-900 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
-                    <path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6" />
-                  </svg>
-                ) : (
-                  <svg className="w-5 h-5 text-stone-900 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
-                    <path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" />
                   </svg>
                 )}
               </button>

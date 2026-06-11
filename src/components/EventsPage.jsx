@@ -4,78 +4,76 @@ import { Map, Calendar, Clock, MapPin, Award, CheckCircle } from 'lucide-react';
 const outdoorEvents = [
   {
     id: 1,
-    title: "Expedition Launch & Campfire",
-    date: "2026-07-10",
-    time: "06:00 PM - 09:00 PM",
+    title: "Monthly Brothers' Halaqa & Bonfire",
+    date: "2026-06-26",
+    time: "05:00 PM - 11:00 PM",
     location: "Oldcastle Campgrounds (3940 ON-3)",
-    skills: ["Camp Safety", "Fire Building", "Leave No Trace"],
-    whatToBring: ["Closed-toe boots", "Water bottle (1L+)", "Light jacket", "Bug spray"],
+    skills: ["Islamic Halaqa", "Outdoor Bonfire Safety", "Brotherhood Reflection"],
+    whatToBring: ["Foldable camp chair", "Warm jacket", "Notebook & pen"],
+    flyerUrl: "/flyers/WhatsApp Image 2026-06-10 at 19.39.31.jpeg",
   },
   {
     id: 2,
-    title: "Water Skills: Kayaking & Swimming",
-    date: "2026-07-25",
-    time: "09:00 AM - 03:00 PM",
-    location: "Windsor Waterfront Lakes",
-    skills: ["Paddle Control", "Capsize Recovery", "Treading Water"],
-    whatToBring: ["Modest swimwear", "Quick-dry clothing", "Towel", "Sunscreen", "Snacks"],
-  },
-  {
-    id: 3,
-    title: "Traditional Archery & Outdoor Cooking",
-    date: "2026-08-08",
-    time: "10:00 AM - 04:00 PM",
-    location: "Oldcastle Campgrounds Range",
-    skills: ["Nocking Arrows", "Target Focus", "Wood Fire Heat Control"],
-    whatToBring: ["Closed-toe boots", "Long sleeves", "Arm guard (optional)", "Appetite"],
-  },
-  {
-    id: 4,
-    title: "Wilderness Navigation Excursion",
-    date: "2026-08-15",
-    time: "08:00 AM - 02:00 PM",
-    location: "Point Pelee National Park",
-    skills: ["Compass Reading", "Topo Map Interpretation", "Route Plotting"],
-    whatToBring: ["Hiking boots", "Compass (provided if needed)", "Notebook & pen", "Trail snacks", "Rain layer"],
-  },
-  {
-    id: 5,
-    title: "Closing Expedition & Awards",
-    date: "2026-08-22",
-    time: "04:00 PM - 10:00 PM",
-    location: "Oldcastle Campgrounds (3940 ON-3)",
-    skills: ["Group Leadership", "Reflection", "Badge Ceremony"],
-    whatToBring: ["Camp chair (optional)", "Warm layers for evening", "Your best stories"],
+    title: "School of Life Outdoor Camp",
+    date: "2026-07-10", // July 10 - August 22
+    time: "09:00 AM - 04:00 PM",
+    location: "Windsor Waterfront & Oldcastle Range",
+    skills: ["Swimming & Water Safety", "Kayaking & Paddle Control", "Fishing Techniques", "Traditional Archery", "Outdoor Cooking"],
+    whatToBring: ["Towel & modest swimwear", "Sunscreen & bug spray", "Water bottle (1.5L+)", "Hiking boots"],
+    flyerUrl: "/flyers/WhatsApp Image 2026-06-05 at 21.15.05 (1).jpeg",
   },
 ];
 
 const lifeEvents = [
   {
     id: 101,
-    title: "Prophetic Marriage Blueprint Workshop",
-    date: "2026-07-18",
-    time: "10:00 AM - 04:00 PM",
-    location: "Windsor Islamic Association (WIA)",
-    skills: ["Prophetic Communication", "Conflict Resolution", "Family Sunnah Guidelines"],
-    whatToBring: ["Notebook & pen", "Questions for Q&A session", "Pre-reading notes"],
+    title: "What It Takes to Get Married",
+    date: "2026-01-17",
+    time: "10:30 AM - 05:30 PM",
+    location: "WIA Centre (2555 McKay Ave)",
+    skills: ["Marriage Readiness Primer", "Spouse Selection Criteria", "Sunnah Engagement Rules"],
+    whatToBring: ["Notebook & pen", "Course materials (provided)", "Curiosity & questions"],
+    flyerUrl: "/flyers/dc3d7ef3-3401-4834-aad1-68f033758526.JPG",
   },
   {
     id: 102,
-    title: "Kids Nature Storytime & Fatherhood Prep",
-    date: "2026-08-01",
-    time: "11:00 AM - 01:00 PM",
-    location: "Windsor Public Library - Community Room",
-    skills: ["Creative Storytelling", "Basic Outdoor Awareness", "Parental Connection"],
-    whatToBring: ["Comfortable cushion", "Healthy snacks for kids", "An open mind"],
+    title: "Keeping It Together",
+    date: "2026-02-07",
+    time: "10:30 AM - 04:30 PM",
+    location: "WIA Centre (2555 McKay Ave)",
+    skills: ["Islamic Intimacy Guidelines", "Marital Privacy Rights", "Family Harmony Rules"],
+    whatToBring: ["Notebook & pen", "Course handbook (provided)", "18+ Age Verification"],
+    flyerUrl: "/flyers/Screenshot 2026-06-11 at 7.07.27 PM.png",
   },
   {
     id: 103,
-    title: "Youth Identity & Leadership Seminar",
-    date: "2026-08-12",
-    time: "05:00 PM - 08:30 PM",
-    location: "Windsor Community Centre Hall",
-    skills: ["Sunnah-style Teamwork", "Public Speaking", "Confidence Building"],
-    whatToBring: ["Interactive tablet or notebook", "Water bottle", "High energy"],
+    title: "Marital Arts: Conflict Resolution",
+    date: "2026-04-11",
+    time: "10:30 AM - 04:30 PM",
+    location: "WIA Centre (2555 McKay Ave)",
+    skills: ["Sunnah-style Dispute Resolution", "Healthy Marital Communication", "Active Listening Drills"],
+    whatToBring: ["Notebook & pen", "Openness to exercises", "Course lunch (included)"],
+    flyerUrl: "/flyers/f674e254-efbb-43a9-8202-5ba132adfa98.JPG",
+  },
+  {
+    id: 104,
+    title: "Parenting Essentials",
+    date: "2026-05-09",
+    time: "10:30 AM - 01:30 PM",
+    location: "WIA Centre (2555 McKay Ave)",
+    skills: ["Pregnancy & Childbirth Support", "Early Years Sunnah Care", "Parental Communication Skills"],
+    whatToBring: ["Notebook & pen", "Course syllabus (provided)", "Refreshments included"],
+    flyerUrl: "/flyers/951130e6-798f-4aeb-9326-b250b98a9980.JPG",
+  },
+  {
+    id: 105,
+    title: "Kids Nature Storytime Special Edition",
+    date: "2026-06-14",
+    time: "11:30 AM - 01:00 PM",
+    location: "WIA Centre (2555 McKay Ave)",
+    skills: ["Islamic Character Stories", "Childhood Fatherhood Bond", "Kite Flying Activity"],
+    whatToBring: ["Ages 5 to 9 kids", "FEE: $5 per child", "Appetite for pizza"],
+    flyerUrl: "/flyers/WhatsApp Image 2026-06-08 at 18.01.07.jpeg",
   },
 ];
 
@@ -97,13 +95,13 @@ export default function EventsPage() {
           <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
           <div className="relative z-10 space-y-4">
             <span className="inline-flex items-center gap-1.5 bg-campfire text-canvas border-2 border-stone-900 px-3 py-1 font-display font-black text-[10px] uppercase tracking-wider shadow-[2px_2px_0px_0px_#1C1917]">
-              <Calendar className="w-3 h-3" /> Summer 2026 Schedule
+              <Calendar className="w-3 h-3" /> Event Calendar
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-black uppercase tracking-tight leading-none text-white">
-              Events Directory
+              Expedition Directory
             </h1>
             <p className="text-sm text-stone-300 font-semibold max-w-lg">
-              Explore our dual streams: outdoor expeditions and community life workshops.
+              Reviving physical readiness, spiritual clarity, and family values in our community.
             </p>
           </div>
         </div>
@@ -116,10 +114,10 @@ export default function EventsPage() {
             <Map className="w-7 h-7 text-forest" />
             <div>
               <h2 className="text-xl md:text-2xl font-display font-black tracking-tight text-forest m-0 uppercase">
-                Event Schedule
+                Events &amp; Workshops
               </h2>
               <p className="text-stone-600 text-xs font-semibold">
-                Register via your scouts portal account. Open to community members.
+                Click a flyer to view the high-resolution image.
               </p>
             </div>
           </div>
@@ -149,7 +147,7 @@ export default function EventsPage() {
           </div>
         </div>
 
-        {/* Event Cards — Timeline Layout (mirroring ExpeditionMap) */}
+        {/* Event Cards — Timeline Layout */}
         <div className="relative border-l-4 border-stone-900 ml-4 md:ml-6 pl-6 md:pl-8 py-2 flex flex-col gap-8">
           {currentEvents.map((event, index) => (
             <div key={event.id} className="relative">
@@ -158,59 +156,75 @@ export default function EventsPage() {
                 {index + 1}
               </div>
 
-              {/* Card */}
-              <div className="bg-canvas p-5 md:p-6 trail-border trail-shadow rounded-sm flex flex-col gap-5 hover:shadow-[6px_6px_0px_0px_rgba(28,25,23,1)] transition-all">
-                {/* Header */}
-                <div className="border-b-2 border-stone-100 pb-3">
-                  <h3 className="text-lg md:text-xl font-display font-black text-stone-900">
-                    {event.title}
-                  </h3>
-                  <div className="flex flex-wrap gap-4 mt-2 text-stone-600 text-xs font-semibold">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5 text-campfire" />
-                      {formatDate(event.date)}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-campfire" />
-                      {event.time}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-campfire" />
-                      {event.location}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Skills */}
-                <div>
-                  <h4 className="text-xs font-black uppercase text-stone-500 tracking-wider mb-2 flex items-center gap-1">
-                    <Award className="w-4 h-4 text-forest" /> Skills / Focus
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {event.skills.map((skill, i) => (
-                      <span key={i} className="bg-stone-100 text-stone-800 text-xs font-bold px-3 py-1 trail-border rounded-sm">
-                        {skill}
+              {/* Card - Flex layout to fit Details + Flyer */}
+              <div className="bg-canvas p-5 md:p-6 trail-border trail-shadow rounded-sm flex flex-col md:flex-row gap-6 hover:shadow-[6px_6px_0px_0px_rgba(28,25,23,1)] transition-all">
+                {/* Details Column */}
+                <div className="flex-1 flex flex-col gap-4">
+                  {/* Header */}
+                  <div className="border-b-2 border-stone-100 pb-3">
+                    <h3 className="text-lg md:text-xl font-display font-black text-stone-900 leading-tight">
+                      {event.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-4 mt-2.5 text-stone-600 text-xs font-semibold">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-3.5 h-3.5 text-campfire shrink-0" />
+                        {formatDate(event.date)}
                       </span>
-                    ))}
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-3.5 h-3.5 text-campfire shrink-0" />
+                        {event.time}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <MapPin className="w-3.5 h-3.5 text-campfire shrink-0" />
+                        {event.location}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Skills */}
+                  <div>
+                    <h4 className="text-xs font-black uppercase text-stone-500 tracking-wider mb-2 flex items-center gap-1">
+                      <Award className="w-4 h-4 text-forest" /> Focus / Skills
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {event.skills.map((skill, i) => (
+                        <span key={i} className="bg-stone-100 text-stone-800 text-xs font-bold px-3 py-1 trail-border rounded-sm">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* What to Bring */}
+                  <div className="bg-stone-100 p-4 trail-border rounded-sm">
+                    <h4 className="text-xs font-black uppercase text-stone-900 tracking-wider mb-2.5 flex items-center gap-1 border-b border-stone-300 pb-1.5">
+                      <CheckCircle className="w-4 h-4 text-campfire" /> What to Bring / Notes
+                    </h4>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {event.whatToBring.map((item, i) => (
+                        <li key={i} className="flex items-center gap-2 text-xs text-stone-700 font-semibold">
+                          <span className="w-4 h-4 bg-canvas border-2 border-stone-900 rounded-sm flex items-center justify-center shrink-0">
+                            <span className="text-[8px] text-stone-400">—</span>
+                          </span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
-                {/* What to Bring */}
-                <div className="bg-stone-100 p-4 trail-border rounded-sm">
-                  <h4 className="text-xs font-black uppercase text-stone-900 tracking-wider mb-2.5 flex items-center gap-1 border-b border-stone-300 pb-1.5">
-                    <CheckCircle className="w-4 h-4 text-campfire" /> What to Bring / Notes
-                  </h4>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {event.whatToBring.map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-xs text-stone-700 font-semibold">
-                        <span className="w-4 h-4 bg-canvas border-2 border-stone-900 rounded-sm flex items-center justify-center shrink-0">
-                          <span className="text-[8px] text-stone-400">—</span>
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {/* Flyer Image Column */}
+                {event.flyerUrl && (
+                  <div className="shrink-0 flex items-center justify-center md:self-start">
+                    <a href={event.flyerUrl} target="_blank" rel="noreferrer" className="block cursor-zoom-in">
+                      <img
+                        src={event.flyerUrl}
+                        alt={`${event.title} Flyer`}
+                        className="w-full sm:w-48 h-auto object-cover border-2 border-stone-900 shadow-[3px_3px_0px_0px_#1C1917] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#1C1917] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all rounded-sm"
+                      />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}

@@ -36,16 +36,14 @@ export default function AboutPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* Portrait Placeholder */}
+          {/* Portrait Photo */}
           <div className="lg:col-span-4 flex">
             <div className="w-full bg-white p-6 trail-border trail-shadow rounded-sm flex flex-col items-center justify-center text-center">
-              {/* Portrait placeholder with matte border */}
-              <div className="w-36 h-44 bg-stone-200 border-4 border-stone-900 shadow-[4px_4px_0px_0px_#1C1917] flex items-center justify-center mb-6">
-                <div className="flex flex-col items-center gap-1 text-stone-400">
-                  <span className="text-3xl">🎓</span>
-                  <span className="text-[8px] font-display font-black uppercase tracking-wider">Portrait</span>
-                </div>
-              </div>
+              <img
+                src="/shaykhaamir.webp"
+                alt="Shaykh Aamir Zaidi"
+                className="w-36 h-44 border-4 border-stone-900 shadow-[4px_4px_0px_0px_#1C1917] object-cover mb-6 bg-stone-100"
+              />
 
               <h3 className="text-xl font-display font-black uppercase tracking-wide text-stone-900">
                 Shaykh Aamir Zaidi
