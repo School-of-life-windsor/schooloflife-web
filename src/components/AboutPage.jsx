@@ -49,7 +49,7 @@ export default function AboutPage() {
                 Shaykh Aamir Zaidi
               </h3>
               <p className="text-xs font-display font-black uppercase tracking-widest text-campfire mt-1">
-                Founder &amp; Spiritual Director
+                Founder &amp; Lead Director
               </p>
 
               <div className="border-t-2 border-stone-200 mt-5 pt-5 text-xs text-stone-500 font-bold italic leading-relaxed w-full">
@@ -68,7 +68,7 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="text-sm md:text-base text-stone-600 leading-relaxed font-semibold">
-                  Shaykh Aamir Azhar Zaidi is a community builder, educator, and spiritual guide based in Windsor, Ontario. He completed a diploma in Arabic at the Islamic University of Madinah in 2013, and graduated with a Bachelor of Arts in Arabic and Islamic Studies from the Faculty of Arabic Language. In 2019, he completed a post-graduate chaplaincy certification program through the department of academics in the Prophet’s Mosque. Upon returning to Canada, Shaykh Aamir completed his memorization of the Holy Qur’an.
+                  Shaykh Aamir Azhar Zaidi is a community builder and educator based in Windsor, Ontario. He completed a diploma in Arabic at the Islamic University of Madinah in 2013, and graduated with a Bachelor of Arts in Arabic and Islamic Studies from the Faculty of Arabic Language. In 2019, he completed a post-graduate chaplaincy certification program through the department of academics in the Prophet’s Mosque. Upon returning to Canada, Shaykh Aamir completed his memorization of the Holy Qur’an.
                 </p>
 
                 <p className="text-sm md:text-base text-stone-600 leading-relaxed font-semibold">
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <div className="border-t-2 border-stone-200 pt-5 mt-6 flex flex-wrap gap-2">
                 {[
                   'Curriculum Director',
-                  'Spiritual Guide',
+                  'Community Mentor',
                   'Lead Instructor',
                   'Community Builder',
                 ].map((role) => (

@@ -10,11 +10,11 @@ const carouselSlides = [
     videoUrl: '/videos/IMG_5655.MOV',
   },
   {
-    label: 'Water Skills Drill',
-    icon: '🏊',
+    label: 'Fire Skills & Campfire',
+    icon: '🔥',
     accent: 'bg-stone-800',
-    description: 'Windsor Waterfront Lakes — Team balance drills and water rescue coordination.',
-    videoUrl: '/videos/IMG_5656.MOV',
+    description: 'Oldcastle Campgrounds — Fire building, safety training, and wood fire heat control.',
+    videoUrl: '/videos/IMG_5733.MOV',
   },
   {
     label: 'Wilderness Survival',
