@@ -57,10 +57,16 @@ export default function HomePage({ onNavigate }) {
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
             <button
-              onClick={() => onNavigate('Events')}
+              onClick={() => onNavigate('Apply')}
               className="bg-campfire text-canvas px-5 py-3 font-display font-black text-xs uppercase tracking-wider border-2 border-stone-900 shadow-[3px_3px_0px_0px_#1C1917] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#1C1917] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all duration-100 rounded-sm cursor-pointer"
             >
-              View Upcoming Events
+              Apply Online Now
+            </button>
+            <button
+              onClick={() => onNavigate('Events')}
+              className="bg-forest text-canvas px-5 py-3 font-display font-black text-xs uppercase tracking-wider border-2 border-stone-900 shadow-[3px_3px_0px_0px_#1C1917] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#1C1917] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all duration-100 rounded-sm cursor-pointer"
+            >
+              Upcoming Events
             </button>
             <button
               onClick={() => onNavigate('About')}
@@ -261,12 +267,18 @@ export default function HomePage({ onNavigate }) {
             <p className="text-xs md:text-sm text-stone-300 leading-relaxed font-semibold">
               Join School of Life this summer. Build strength, sharpen skills, and forge bonds of brotherhood in the wilderness.
             </p>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-wrap justify-center gap-3">
               <button
-                onClick={() => onNavigate('Events')}
+                onClick={() => onNavigate('Apply')}
                 className="bg-campfire text-canvas px-6 py-3 font-display font-black text-xs uppercase tracking-wider border-2 border-stone-900 shadow-[3px_3px_0px_0px_#1C1917] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#1C1917] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all duration-100 rounded-sm cursor-pointer"
               >
-                View Summer Schedule
+                Apply Online Now
+              </button>
+              <button
+                onClick={() => onNavigate('Events')}
+                className="bg-transparent text-canvas px-6 py-3 font-display font-black text-xs uppercase tracking-wider border-2 border-canvas/40 hover:border-canvas hover:bg-white/10 transition-all duration-100 rounded-sm cursor-pointer"
+              >
+                View Events Schedule
               </button>
             </div>
           </div>

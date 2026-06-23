@@ -5,7 +5,6 @@ const tabs = [
   { id: 'Home', label: 'Home' },
   { id: 'Events', label: 'Events' },
   { id: 'About', label: 'About' },
-  { id: 'Apply', label: 'Apply' },
 ];
 
 export default function Navbar({ activeTab, setActiveTab }) {
