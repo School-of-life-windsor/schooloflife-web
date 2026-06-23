@@ -5,6 +5,7 @@ const tabs = [
   { id: 'Home', label: 'Home' },
   { id: 'Events', label: 'Events' },
   { id: 'About', label: 'About' },
+  { id: 'Apply', label: 'Apply' },
 ];
 
 export default function Navbar({ activeTab, setActiveTab }) {
@@ -55,7 +56,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
         {/* Desktop Login CTA */}
         <a
-          href="https://schooloflife-henna.vercel.app/"
+          href="https://app.school-of-life.ca"
           target="_blank"
           rel="noreferrer"
           className="hidden md:flex items-center gap-1.5 bg-campfire text-canvas px-4 py-2 font-display font-black text-xs uppercase tracking-wider border-2 border-stone-900 shadow-[3px_3px_0px_0px_#1C1917] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#1C1917] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all duration-100 rounded-sm cursor-pointer no-underline"
@@ -94,7 +95,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
             );
           })}
           <a
-            href="https://schooloflife-henna.vercel.app/"
+            href="https://app.school-of-life.ca"
             target="_blank"
             rel="noreferrer"
             className="px-4 py-3 font-display font-black text-sm uppercase tracking-wider text-center bg-campfire text-canvas border-2 border-stone-900 shadow-[3px_3px_0px_0px_#1C1917] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all duration-100 rounded-sm cursor-pointer no-underline flex items-center justify-center gap-2"
