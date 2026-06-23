@@ -52,12 +52,12 @@ export default function App() {
       {showBanner && (
         <div className="bg-campfire text-canvas text-center py-2.5 px-4 font-display font-bold text-xs md:text-sm border-b-2 border-stone-900 flex items-center justify-between relative z-[60] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           <div className="flex-1 text-center">
-            <span>📢 Summer 2026 Registration is Open! </span>
+            <span>📢 Summer 2026 Registration is Open! <strong className="font-extrabold text-white">Seats are strictly limited!</strong> </span>
             <button
               onClick={() => setActiveTab('Apply')}
               className="underline font-black uppercase tracking-wider ml-1 cursor-pointer hover:text-white"
             >
-              Fill out the application to apply now &rarr;
+              Sign up now &rarr;
             </button>
           </div>
           <button
@@ -101,7 +101,7 @@ export default function App() {
             </div>
 
             <p className="text-xs md:text-sm text-stone-600 font-semibold leading-relaxed">
-              Revive the Sunnah of physical readiness, outdoor survival, and community brotherhood. Submit your application today to secure your spot—**seats are strictly limited!**
+              Revive the Sunnah of physical readiness, outdoor survival, and community brotherhood. Submit your application today to secure your spot—<strong className="font-extrabold text-stone-900">seats are strictly limited!</strong>
             </p>
 
             <div className="flex flex-col gap-2.5 pt-2">
