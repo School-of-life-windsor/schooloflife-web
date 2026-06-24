@@ -4,12 +4,32 @@ import HomePage from './components/HomePage';
 import EventsPage from './components/EventsPage';
 import AboutPage from './components/AboutPage';
 import ApplyPage from './components/ApplyPage';
+import AdminPage from './components/AdminPage';
 import Footer from './components/Footer';
+import { loadSiteConfig } from './data/siteConfig';
 
 export default function App() {
+  const [siteConfig, setSiteConfig] = useState(loadSiteConfig());
   const [activeTab, setActiveTab] = useState('Home');
   const [showBanner, setShowBanner] = useState(true);
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const checkAdminRoute = () => {
+      const path = window.location.pathname;
+      const hash = window.location.hash;
+      if (path === '/admin' || hash === '#admin') {
+        setActiveTab('Admin');
+      }
+    };
+    checkAdminRoute();
+    window.addEventListener('hashchange', checkAdminRoute);
+    window.addEventListener('popstate', checkAdminRoute);
+    return () => {
+      window.removeEventListener('hashchange', checkAdminRoute);
+      window.removeEventListener('popstate', checkAdminRoute);
+    };
+  }, []);
 
   useEffect(() => {
     // Show modal once per session
@@ -37,13 +57,24 @@ export default function App() {
   const renderPage = () => {
     switch (activeTab) {
       case 'Events':
-        return <EventsPage />;
+        return <EventsPage siteConfig={siteConfig} />;
       case 'About':
         return <AboutPage />;
       case 'Apply':
         return <ApplyPage />;
+      case 'Admin':
+        return (
+          <AdminPage
+            siteConfig={siteConfig}
+            setSiteConfig={setSiteConfig}
+            onBackToHome={() => {
+              setActiveTab('Home');
+              window.location.hash = '';
+            }}
+          />
+        );
       default:
-        return <HomePage onNavigate={setActiveTab} />;
+        return <HomePage onNavigate={setActiveTab} siteConfig={siteConfig} />;
     }
   };
 
@@ -76,7 +107,7 @@ export default function App() {
         {renderPage()}
       </main>
       
-      <Footer />
+      <Footer setActiveTab={setActiveTab} />
 
       {/* ─── Registration Promo Modal ─── */}
       {showModal && (
@@ -101,7 +132,7 @@ export default function App() {
             </div>
 
             <p className="text-xs md:text-sm text-stone-600 font-semibold leading-relaxed">
-              Revive the Sunnah of physical readiness, outdoor survival, and community brotherhood. Submit your application today to secure your spot—<strong className="font-extrabold text-stone-900">seats are strictly limited!</strong>
+              Connect with nature, learn outdoor survival skills, and build community connections. Submit your application today to secure your spot. <strong className="font-extrabold text-stone-900">Seats are strictly limited!</strong>
             </p>
 
             <div className="flex flex-col gap-2.5 pt-2">
